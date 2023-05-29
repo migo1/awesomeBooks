@@ -19,7 +19,7 @@ booksForm.onsubmit = (e) => {
   titleInput.value = "";
   authorInput.value = "";
 
-  bookElement(newBook);
+  bookElement(newBook, books.length - 1);
 };
 
 const bookElement = (book, index) => {
