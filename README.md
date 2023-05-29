@@ -27,7 +27,7 @@
 # 📖 Awesome-books <a name="about-project"></a>
 
 
-**Awesome-books** is a website that displays my Techinical skills and projects that i have done.
+**Awesome-books** is a website that displays my Techinical skills and projects that we have done.
 
 
 **Link to online version of Awesome-books** is in [Live Demo](#live-demo) Coming-soon
@@ -98,7 +98,7 @@ In order to run this project you need:
 
 - Clone this repository to your desired folder with the following commend
 ```
-git clone git@github.com:AnsarIbrahim/Awesome-books-with-ES6.git
+git clone git@github.com:migo1/awesomeBooks/create-acess-book-object-js.git
 ```
 
 
@@ -113,7 +113,7 @@ Awesome-books
 ### Usage
 
 - To run the project, execute the following command:
-  - Type cd ```Awesome-books ```
+  - Type cd ```awesomeBooks ```
   - open index.html file in the browser
 
 ### Run tests
@@ -124,7 +124,7 @@ Awesome-books
 ### Deployment
 
 - You can deploy this project using:
-  - Type cd ``` Awesome-books ```
+  - Type cd ```awesomeBooks ```
   - open index.html file in the browser
 
 
@@ -183,6 +183,7 @@ Feel free to check the [issues page](../../issues/).
 
 - I would like to thank following
   - MicroVerse 
+  - My coding partner[Ansar Ibrahim]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
