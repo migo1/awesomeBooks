@@ -18,8 +18,5 @@
     "no-unused-vars": "off",
     "quotes": "off"
   },
-  "ignorePatterns": [
-    "dist/",
-    "build/"
-  ]
+  "ignorePatterns": ["dist/", "build/"]
 }
