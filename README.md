@@ -29,9 +29,6 @@
 
 **Awesome-books** is a website that displays my Techinical skills and projects that we have done.
 
-
-**Link to online version of Awesome-books** is in [Live Demo](#live-demo) Coming-soon
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -46,41 +43,18 @@
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="#">N/A</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="#">N/A</a></li>
-  </ul>
-</details>
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
 - **local-storage**
 - **Add-books**
+- **Display-books**
 - **Remove-books**
 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-- [Live Demo Link](Coming-Soon) Coming-soon
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -106,7 +80,7 @@ git clone git@github.com:migo1/awesomeBooks/create-acess-book-object-js.git
 
 - Type cd 
 ```
-Awesome-books
+awesomeBooks
 ```
 - open index.html file in the browser
 
@@ -119,13 +93,7 @@ Awesome-books
 ### Run tests
 
 - To run tests, run the following command:
-  - N/A
-
-### Deployment
-
-- You can deploy this project using:
-  - Type cd ```awesomeBooks ```
-  - open index.html file in the browser
+- npx eslint .
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -153,8 +121,8 @@ Awesome-books
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Ruby**
-- [ ] **React**
+- [ ] **Style Core elements of the page**
+- [ ] **Create a complete website with navigation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -164,7 +132,7 @@ Awesome-books
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/migo1/awesomeBooks/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
