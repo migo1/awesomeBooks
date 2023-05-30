@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.btn-div {
+  display: flex;
+  float: right;
+}
+
+.btn {
+  min-width: 100px;
+}
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+td {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#book-table {
+  border-style: groove;
+}
+
+#books {
+  padding: 0 10%;
+}
+
+.table td.dark {
+  background-color: grey;
+}
+
+form#bookForm {
+  padding: 0 17%;
+}
+
+hr.center {
+  width: 20%;
+  margin: 2% auto;
+  border-top: black solid;
+}
