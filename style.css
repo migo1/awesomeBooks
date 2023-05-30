@@ -42,3 +42,13 @@ td {
 .table td.dark {
   background-color: grey;
 }
+
+form#bookForm {
+  padding: 0 17%;
+}
+
+hr.center {
+  width: 20%;
+  margin: 2% auto ;
+  border-top: black solid;
+}
