@@ -23,18 +23,24 @@ booksForm.onsubmit = (e) => {
 };
 
 const bookElement = (book, index) => {
+  const bookContainer = document.createElement('div');
+  bookContainer.classList.add('book-container');
   const pTitle = document.createElement("p");
+  pTitle.classList.add('title');
   pTitle.innerText = book.title;
   const pAuthor = document.createElement("p");
+  pAuthor.classList.add('author');
   pAuthor.innerText = book.author;
   const removeButton = document.createElement("button");
+  removeButton.classList.add('remove-button');
   removeButton.innerText = "remove";
   const line = document.createElement("hr");
 
   removeButton.addEventListener("click", () => {
     deleteBook(index);
   });
-  booksParent.append(pTitle, pAuthor, removeButton, line);
+  bookContainer.append(pTitle, pAuthor, removeButton, line);
+  booksParent.appendChild(bookContainer);
 };
 
 const displayBooks = () => {
