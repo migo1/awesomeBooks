@@ -20,11 +20,25 @@ html {
 
 .book-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  overflow: scroll;
+}
+
+td {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 #book-table {
   border-style: groove;
+}
+
+#books {
+  padding: 0 10%;
+}
+
+.table td.dark {
+  background-color: grey;
 }

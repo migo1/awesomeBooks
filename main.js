@@ -1,6 +1,6 @@
 class Book {
   constructor() {
-    this.booksParent = document.getElementById("book-table");
+    this.booksParent = document.getElementById("table-row");
     this.titleInput = document.getElementById("title");
     this.authorInput = document.getElementById("author");
     this.books = JSON.parse(localStorage.getItem("books")) || [];
@@ -24,12 +24,11 @@ class Book {
   }
 
   bookElement(book, index) {
-    const bookContainer = document.createElement("tr");
-    bookContainer.setAttribute("class", "book-container container p-3");
-    // const pTitle = document.createElement("td");
-    // pTitle.innerText = book.title;
-    // const pAuthor = document.createElement("td");
-    // pAuthor.innerText = book.author;
+    const bookContainer = document.createElement("td");
+    if (index % 2 === 0) {
+      bookContainer.classList.add("dark");
+    }
+
     const removeButton = document.createElement("button");
     removeButton.setAttribute("class", "btn  btn-sm btn-danger");
     removeButton.textContent = "Remove";
