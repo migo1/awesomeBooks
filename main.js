@@ -1,6 +1,6 @@
 class Book {
   constructor() {
-    this.booksParent = document.getElementById("books");
+    this.booksParent = document.getElementById("book-table");
     this.titleInput = document.getElementById("title");
     this.authorInput = document.getElementById("author");
     this.books = JSON.parse(localStorage.getItem("books")) || [];
@@ -24,26 +24,22 @@ class Book {
   }
 
   bookElement(book, index) {
-    const bookContainer = document.createElement("div");
-    bookContainer.setAttribute(
-      "class",
-      "book-container container text-bg-secondary p-3"
-    );
-    const pTitle = document.createElement("p");
-    pTitle.setAttribute("class", "title ");
-    pTitle.innerText = book.title;
-    const pAuthor = document.createElement("p");
-    pAuthor.setAttribute("class", "author ");
-    pAuthor.innerText = book.author;
+    const bookContainer = document.createElement("tr");
+    bookContainer.setAttribute("class", "book-container container p-3");
+    // const pTitle = document.createElement("td");
+    // pTitle.innerText = book.title;
+    // const pAuthor = document.createElement("td");
+    // pAuthor.innerText = book.author;
     const removeButton = document.createElement("button");
     removeButton.setAttribute("class", "btn  btn-sm btn-danger");
-    removeButton.innerText = "Remove";
+    removeButton.textContent = "Remove";
 
     removeButton.addEventListener("click", () => {
       this.deleteBook(index);
     });
     bookContainer.append(`"${book.title}" by ${book.author}`, removeButton);
     this.booksParent.appendChild(bookContainer);
+    bookContainer.scrollIntoView({ behavior: "smooth" });
   }
 
   displayBooks() {
