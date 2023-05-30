@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.btn-div {
+  display: flex;
+  float: right;
+}
+
+.btn {
+  min-width: 100px;
+}
+
+.book-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

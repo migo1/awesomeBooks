@@ -25,22 +25,24 @@ class Book {
 
   bookElement(book, index) {
     const bookContainer = document.createElement("div");
-    bookContainer.classList.add("book-container");
+    bookContainer.setAttribute(
+      "class",
+      "book-container container text-bg-secondary p-3"
+    );
     const pTitle = document.createElement("p");
-    pTitle.classList.add("title");
+    pTitle.setAttribute("class", "title ");
     pTitle.innerText = book.title;
     const pAuthor = document.createElement("p");
-    pAuthor.classList.add("author");
+    pAuthor.setAttribute("class", "author ");
     pAuthor.innerText = book.author;
     const removeButton = document.createElement("button");
-    removeButton.classList.add("remove-button");
-    removeButton.innerText = "remove";
-    const line = document.createElement("hr");
+    removeButton.setAttribute("class", "btn  btn-sm btn-danger");
+    removeButton.innerText = "Remove";
 
     removeButton.addEventListener("click", () => {
       this.deleteBook(index);
     });
-    bookContainer.append(pTitle, pAuthor, removeButton, line);
+    bookContainer.append(`"${book.title}" by ${book.author}`, removeButton);
     this.booksParent.appendChild(bookContainer);
   }
 
