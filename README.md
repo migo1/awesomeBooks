@@ -60,7 +60,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](#)
+- [Live Demo Link](https://migo1.github.io/awesomeBooks/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
