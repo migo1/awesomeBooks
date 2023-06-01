@@ -59,3 +59,18 @@ const booksForm = document.getElementById("bookForm");
 const storeBook = new Book();
 booksForm.addEventListener("submit", storeBook.addBook);
 storeBook.displayBooks();
+
+const links = document.querySelectorAll("nav a");
+const section = document.querySelectorAll("section");
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    link.classList.add("active");
+    section.forEach((section) => { section.style.display = "none"; });
+
+    const sectionId = link.getAttribute("href").slice(1);
+    document.getElementById(sectionId).style.display = "block";
+  });
+});
+
+links[0].click();
