@@ -20,6 +20,7 @@ class Book {
       this.titleInput.value = "";
       this.authorInput.value = "";
       this.bookElement(newBook, this.books.length - 1);
+      this.displayBooks();
     }
   }
 
@@ -58,7 +59,7 @@ const booksForm = document.getElementById("bookForm");
 
 const storeBook = new Book();
 booksForm.addEventListener("submit", storeBook.addBook);
-storeBook.displayBooks();
+// storeBook.displayBooks();
 
 const links = document.querySelectorAll("nav a");
 const section = document.querySelectorAll("section");
